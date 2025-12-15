@@ -78,36 +78,8 @@ It translates stakeholder needs into concrete capabilities, user stories, and hi
 
 ***
 
-## 4. User stories (by season)
 
-### 4.1 Season 1 – Core reporting
-
-- **US-S1-CEO** – As a CEO, I want a monthly revenue and order volume summary by region and plant so that I can see where demand is growing or shrinking.  
-- **US-S1-SALES-1** – As a Sales Director, I want a list of top 50 customers by revenue and margin so that I can prioritize account reviews.  
-- **US-S1-SALES-2** – As a Sales Director, I want a list of new vs existing customers so that I can tailor outreach and retention efforts.  
-- **US-S1-PLANT** – As a Plant Manager, I want a weekly list of open orders by due date and plant so that I can plan staffing.
-
-### 4.2 Season 2 – Operations, inventory, suppliers
-
-- **US-S2-SC-1** – As a Supply Chain Manager, I want to see products at risk of stockout in the next 30 days so that I can expedite POs or adjust production plans.  
-- **US-S2-SC-2** – As a Supply Chain Manager, I want days-of-supply and safety stock indicators by product and plant so that I can balance stockouts against overstock.  
-- **US-S2-PROC-1** – As a Procurement Manager, I want supplier scorecards showing on-time delivery and cost trends so that I can negotiate or switch suppliers.  
-- **US-S2-PROC-2** – As a Procurement Manager, I want to rank suppliers by cost and reliability so that I can choose preferred suppliers for key components.  
-- **US-S2-PLANT-1** – As a Plant Manager, I want to identify lines with poor schedule adherence and low yield so that I can reduce overtime and scrap.  
-- **US-S2-PLANT-2** – As a Plant Manager, I want to understand utilization by plant and product family so that I can redistribute work and reduce bottlenecks.
-
-### 4.3 Season 3 – Profitability, scenarios, executive view
-
-- **US-S3-CFO-1** – As a CFO, I want fully loaded margin by product so that I can decide which SKUs to discontinue or reprice.  
-- **US-S3-CFO-2** – As a CFO, I want customer-level profitability after discounts and returns so that I can refine our pricing and discount policies.  
-- **US-S3-CFO-3** – As a CFO, I want visibility into payment delays (DSO) by customer so that I can adjust credit limits and terms.  
-- **US-S3-CEO** – As a CEO, I want a single dashboard combining revenue, on-time delivery, and margin by product line so that I can track overall performance at a glance.  
-- **US-S3-COO-1** – As a COO, I want scenario views that show the impact of a 10% demand jump or a 5-day supplier delay so that I can plan capacity and buffer stock.  
-- **US-S3-COO-2** – As a COO, I want to compare plant performance on throughput, on-time delivery, and scrap so that I can prioritize improvement projects.
-
-***
-
-## 5. High-level data requirements
+## 4. High-level data requirements
 
 - Ability to store and query: customers, products, product lines, plants.  
 - Sales entities: orders, order_items, order status, dates, and amounts.  
@@ -119,12 +91,10 @@ It translates stakeholder needs into concrete capabilities, user stories, and hi
 
 ***
 
-## 6. Non-functional requirements (lightweight)
+## 5. Non-functional requirements (lightweight)
 
 - **NFR-1** – Queries supporting core dashboards (sales summary, inventory risk, supplier scorecard, profitability) should return in a reasonable time for interactive use on a laptop-scale environment.  
 - **NFR-2** – All analytical outputs should be reproducible from version-controlled SQL scripts and documented schemas.  
 - **NFR-3** – Metric definitions and logic should be documented so that another analyst could understand and extend the model.
 
 ***
-
-You can drop this into `/docs/requirements.md` and adapt IDs, wording, or sections as you refine Aurora and start building out the schema.
